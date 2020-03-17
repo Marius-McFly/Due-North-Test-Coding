@@ -8,35 +8,71 @@
     width: 100%;
     box-shadow: 0px 3px 6px $color-accent-100;
     background-color: #ffffff;
+
     .topbar-item {
         font-family: Lato;
         font-size: 18px;
         font-weight: 600;
         color: $color-accent-300;
         transition: 375ms;
+
         &:hover {
             color: $color-accent-100;
             cursor: pointer;
         }
     }
+
     .topbar-menu-link:nth-child(-n+5) {
         margin-right: 32px;
     }
+
     .topbar-right {
         display: flex;
-        width: 100%;
+        flex: 2;
         justify-content: flex-end;
+
+        i {
+            font-size: 40px;
+            display: none;
+        }
     }
+
     .container {
         display: flex;
+        padding-right: 100px;
+        padding-left: 100px;
     }
+
     .topbar-left {
         display: flex;
-        width: 100%;
+        flex: 1;
         justify-content: flex-start;
+        align-items: center;
     }
+
     img {
         width: 204px;
         height: 22px;
     }
+
+    // RESPONSIVE ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    @include laptop-large {
+        .topbar-item {
+            height: 18px;
+        }
+    }
+
+    @include tablet-large {
+        .topbar-right {
+            i {
+                display: block;
+            }
+
+            .topbar-item {
+                display: none;
+            }
+        }
+    }
+
 }

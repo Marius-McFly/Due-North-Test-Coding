@@ -1,19 +1,24 @@
-.section-title {
-    font-size: 60px;
-    font-weight: 700;
-    font-family: Montserrat;
-}
+.section {
+    padding-left: 100px;
+    padding-right: 100px;
 
-.section-subtitle {
-    font-size: 29px;
-    font-family: Montserrat;
-}
+    .section-title {
+        font-weight: 700;
+        font-family: Montserrat;
+        font-size: 60px;
+    }
 
-.section-text {
-    font-size: 15px;
-    line-height: 28px;
-}
+    .section-subtitle {
+        font-size: 29px;
+        font-family: Montserrat;
+    }
 
-strong {
-    font-weight: 700;
+    .section-text {
+        font-size: 15px;
+        line-height: 28px;
+    }
+
+    strong {
+        font-weight: 700;
+    }
 }

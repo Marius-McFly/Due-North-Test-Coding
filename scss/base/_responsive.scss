@@ -1,0 +1,26 @@
+
+// RESPONSIVE ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@mixin screen-small {
+    @media screen and (max-width: 1750px) {
+        @content;
+    }
+}
+
+@mixin laptop-large {
+    @media screen and (max-width: 1300px) {
+        @content;
+    }
+}
+
+@mixin tablet-large {
+    @media screen and (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin phone-small {
+    @media screen and (max-width: 480px) {
+        @content;
+    }
+}
