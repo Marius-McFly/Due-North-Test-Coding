@@ -1,14 +1,11 @@
 .section.section--case-study {
     position: relative;
-    height: 894px;
+    height: 1094px;
     max-width: 1920px;
     color: #ffffff;
     margin: auto;
-
-    .container {
-        padding-top: 104px;
-        padding-bottom: 104px;
-    }
+    padding-top: 104px;
+    padding-bottom: 104px;
 
     .section-background {
         top: 0;
@@ -63,33 +60,33 @@
         position: relative;
         z-index: 4;
         display: flex;
+
+
+    }
+
+    .display-progress {
+        display: flex;
         align-items: center;
+        justify-content: flex-start;
+        width: 100%;
 
-        .display-progress {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            width: 100%;
-
-            .progress-item {
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-                width: 100%;
-            }
-
-            i {
-                margin-bottom: 64px;
-                font-size: 40px;
-            }
-
-            .progress-info {
-                font-size: 48px;
-                font-family: Lato;
-                margin-bottom: 16px;
-            }
+        i {
+            margin-bottom: 64px;
+            font-size: 40px;
         }
+    }
 
+    .progress-item {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .progress-info {
+        font-size: 48px;
+        font-family: Lato;
+        margin-bottom: 16px;
     }
 
     .section-footer {
@@ -97,27 +94,57 @@
         z-index: 4;
         display: flex;
 
-        .ability-list {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-
-            .ability-item {
-                margin-bottom: 16px;
-
-                .fa.fa-check {
-                    color: $color-decoration-200;
-                }
-            }
-        }
-
-        .ability-text {
-            width: 100%;
-            margin-right: 64px;
-
-            .ability-subtitle {
-                margin-top: 40px;
-            }
+        i {
+            color: $color-decoration-200;
         }
     }
+
+    .ability-list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .ability-item {
+        margin-bottom: 16px;
+
+    }
+
+    .ability-text {
+        width: 100%;
+        margin-right: 64px;
+    }
+
+    .ability-subtitle {
+        margin-top: 40px;
+    }
+
+    // RESPONSIVE ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    @include screen-small {
+        .section-head {
+            margin-right: 0px;
+        }
+
+        .section-body {
+            flex-direction: column;
+        }
+        
+        .display-progress {
+            max-width: 604px;
+            justify-content: space-between;
+            margin-bottom: 104px;
+        }
+
+        .progress-item {
+            text-align: center;
+            align-items: center;
+            width: auto;
+        }
+        .progress-text {
+            line-height: 22px;
+        }
+    }
+
 }
