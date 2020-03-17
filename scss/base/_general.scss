@@ -1,0 +1,26 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Lato;
+}
+
+.main {
+    width: auto;
+    background-color: white;
+    padding-top: 80px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1600px;
+    box-sizing: content-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+* ::selection {
+    background: #006AD8;
+    color: #ffffff;
+}

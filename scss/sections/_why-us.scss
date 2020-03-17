@@ -1,0 +1,33 @@
+.section.section--why-us {
+    padding-top: 104px;
+    padding-bottom: 104px;
+    .container {
+        max-width: 1012px;
+    }
+    .section-head {
+        margin-bottom: 16px;
+        .section-title {
+            font-size: 29px;
+            color: $tertiary-color;
+        }
+    }
+    .section-body {
+        display: flex;
+        .section-text {
+            max-width: 504px;
+            margin-right: 32px;
+        }
+        .reasons-list {
+            max-width: 504px;
+            margin-left: 32px;
+            list-style: disc;
+            .list-item {
+                font-weight: 600;
+                line-height: 22px;
+            }
+            .list-item:nth-child(-n+4) {
+                margin-bottom: 8px;
+            }
+        }
+    }
+}

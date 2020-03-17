@@ -1,0 +1,22 @@
+// base +++++++++++++++++++++++++++
+@import './base/reset';
+@import './fontawesome/fontawesome.scss';
+@import './fontawesome/solid.scss';
+@import './fontawesome/brands.scss';
+@import './base/variable';
+@import './base/general';
+// components +++++++++++++++++++++
+@import './components/button';
+@import './components/chat';
+@import './components/footer';
+@import './components/topbar';
+@import './components/section';
+//sections ++++++++++++++++++++++++
+@import './sections/hero';
+@import './sections/goals';
+@import './sections/case-study';
+@import './sections/why-us';
+@import './sections/business';
+@import './sections/route';
+@import './sections/quote';
+@import './sections/recommend';

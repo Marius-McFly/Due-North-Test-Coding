@@ -1,0 +1,42 @@
+.topbar {
+    display: flex;
+    align-items: center;
+    top: 0px;
+    position: fixed;
+    height: 80px;
+    z-index: 12;
+    width: 100%;
+    box-shadow: 0px 3px 6px $color-accent-100;
+    background-color: #ffffff;
+    .topbar-item {
+        font-family: Lato;
+        font-size: 18px;
+        font-weight: 600;
+        color: $color-accent-300;
+        transition: 375ms;
+        &:hover {
+            color: $color-accent-100;
+            cursor: pointer;
+        }
+    }
+    .topbar-menu-link:nth-child(-n+5) {
+        margin-right: 32px;
+    }
+    .topbar-right {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+    }
+    .container {
+        display: flex;
+    }
+    .topbar-left {
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    img {
+        width: 204px;
+        height: 22px;
+    }
+}

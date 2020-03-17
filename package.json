@@ -1,0 +1,24 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "due north test coding",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx node-sass scss/style.scss CSS/style.css",
+    "watch": "npx node-sass scss/style.scss css/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marius-McFly/Due-North-Test-Coding.git"
+  },
+  "author": "marius hofmann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marius-McFly/Due-North-Test-Coding/issues"
+  },
+  "homepage": "https://github.com/Marius-McFly/Due-North-Test-Coding#readme",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

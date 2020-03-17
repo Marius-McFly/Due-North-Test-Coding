@@ -1,0 +1,28 @@
+.button {
+    border-color: white;
+    border-radius: 20px;
+    width: 140px;
+    height: 40px;
+    color: #ffffff;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ffffff;
+    transition: 375ms;
+    .fa.fa-caret-right {
+        margin-left: 8px;
+        margin-top: 2px;
+        transition: 375ms;
+    }
+    &:hover {
+        cursor: pointer;
+        border-radius: 0px;
+        border-color: #fff;
+        color: #fff;
+        width: 240px;
+        .fa.fa-caret-right {
+            margin-left: 40px;
+        }
+    }
+}
