@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx node-sass scss/style.scss CSS/style.css",
+    "build": "npx node-sass scss/style.scss css/style.css",
     "watch": "npx node-sass scss/style.scss css/style.css --watch"
   },
   "repository": {
