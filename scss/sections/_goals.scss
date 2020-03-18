@@ -40,6 +40,10 @@
         margin-right: 40px;
         margin-left: 40px;
     }
+
+    // RESPONSIVE ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
     @include laptop-large {
         .section-body {
             flex-direction: column;
@@ -54,6 +58,10 @@
         .goal-item:nth-child(2) {
             margin-top: 64px;
             margin-bottom: 64px;
+            margin-left: 0px;
+            margin-right: 0px;
         }
+    }
+    @include tablet-large {
     }
 }

@@ -32,7 +32,7 @@
         justify-content: flex-end;
 
         i {
-            font-size: 40px;
+            font-size: 36px;
             display: none;
         }
     }
@@ -50,9 +50,24 @@
         align-items: center;
     }
 
-    img {
-        width: 204px;
-        height: 22px;
+    .topbar-logo-mobile {
+        display: none;
+        height: 34px;
+        width: 34px;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .topbar-logo-screen {
+        max-height: 22px;
+        max-width: 204px;
+
+        img {
+            height: auto;
+            width: 100%;
+        }
     }
 
     // RESPONSIVE ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -72,6 +87,18 @@
             .topbar-item {
                 display: none;
             }
+        }
+
+        .topbar-logo-screen {
+            display: none;
+        }
+        .topbar-logo-mobile {
+            display: block;
+        }
+
+        .container {
+            padding-right: 50px;
+            padding-left: 50px;
         }
     }
 

@@ -22,3 +22,10 @@
         font-weight: 700;
     }
 }
+
+@include tablet-large {
+    .section {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+}
