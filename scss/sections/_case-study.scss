@@ -1,6 +1,6 @@
 .section.section--case-study {
     position: relative;
-    height: 1094px;
+    height: auto;
     max-width: 1920px;
     color: #ffffff;
     margin: auto;
@@ -118,6 +118,8 @@
 
     .ability-subtitle {
         margin-top: 40px;
+        line-height: 20px;
+        text-transform: uppercase;
     }
 
     // RESPONSIVE ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -130,7 +132,7 @@
         .section-body {
             flex-direction: column;
         }
-        
+
         .display-progress {
             max-width: 604px;
             justify-content: space-between;
@@ -142,9 +144,32 @@
             align-items: center;
             width: auto;
         }
+
         .progress-text {
             line-height: 22px;
         }
+    }
+
+    @include tablet-large {
+        .section-footer {
+            flex-direction: column;
+        }
+
+        .display-progress {
+            flex-wrap: wrap;
+            i {
+                margin-bottom: 40px;
+            }
+        }
+
+        .progress-item {
+            margin-bottom: 64px;
+            min-width: 140px;
+        }
+        .section-text {
+            margin-bottom: 64px;
+        }
+        .ability-subtitle {}
     }
 
 }
