@@ -24,6 +24,18 @@
         }
     }
 
+    .section-title {
+        font-size: 40px;
+        margin-bottom: 80px;
+        line-height: 50px;
+    }
+
+    .section-subtitle {
+        font-weight: 500;
+        font-family: Lato;
+        font-size: 18px;
+        margin-bottom: 104px;
+    }
     .section-head {
         position: relative;
         z-index: 6;
@@ -33,18 +45,6 @@
         margin-right: 96px;
         width: 100%;
 
-        .section-title {
-            font-size: 40px;
-            margin-bottom: 80px;
-            line-height: 50px;
-        }
-
-        .section-subtitle {
-            font-weight: 500;
-            font-family: Lato;
-            font-size: 18px;
-            margin-bottom: 104px;
-        }
 
         img {
             object-fit: scale-down;
@@ -154,9 +154,15 @@
         .section-footer {
             flex-direction: column;
         }
+        
+        .ability-list {
+            margin-bottom: 64px;
+            line-height: 26px;
+        }
 
         .display-progress {
             flex-wrap: wrap;
+
             i {
                 margin-bottom: 40px;
             }
@@ -169,7 +175,26 @@
         .section-text {
             margin-bottom: 64px;
         }
-        .ability-subtitle {}
+        .ability-subtitle {
+            line-height: 26px;
+        }
+    }
+
+    @include phone-small {
+        .display-progress {
+            flex-direction: column;
+        }
+        .section-head {
+            align-items: center;
+            text-align: center;
+        }
+        .section-title {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        .section-subtitle {
+            line-height: 28px;
+        }
     }
 
 }
